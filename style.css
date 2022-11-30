@@ -1,0 +1,556 @@
+html {
+    font-family: "Montserrat", sans-serif;
+  }
+  /*
+    1. Use a more-intuitive box-sizing model.
+  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+      3. Allow percentage-based heights in the application
+    */
+  html,
+  body {
+    height: 100%;
+  }
+  
+  /*
+    7. Remove built-in form typography styles
+  */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  }
+  
+  /*
+    8. Avoid text overflows
+  */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+
+/*general setting*/
+.center-align-vertical{
+  align-self: center;
+}
+.text-size-12px{
+  font-size: 12px;
+  color: gray;
+}
+.text-size-14px{
+  font-size: 14px;
+}
+.purple-font{
+  color: rgb(164,53,240);
+}
+.brown-text{
+  color: rgb(180,105,14);
+}
+.line-height-20px{
+  line-height: 20px;
+}
+
+/* nav section */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 1;
+    height: 70px;
+}
+.navigation .logo img{
+    width: 90px;
+    height: 70px;
+}
+.navigation .tooltip {
+    position: relative;
+    display: inline-block;
+}
+.navigation .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 380px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px 20px;
+    list-style: none;  
+    /* Position the tooltip */
+    position: absolute;
+    top: 240%;
+    z-index: 1;
+}
+.navigation .tooltip .tooltiptext div{
+    display: flex;
+}
+.navigation .tooltip .tooltiptext div li{
+    padding: 10px 0px;
+    flex-basis: 100%;
+    display: inline-block;
+}
+.navigation .tooltip .tooltiptext div img{
+    align-self: center;
+    margin-left: 150px;
+    flex-basis: 70%;
+    width: 30px;
+    height: 20px;
+}
+.navigation .tooltip .tooltiptext2{
+  visibility: hidden;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0 2px gray;
+  top: 240%;
+  left: -200%;
+  z-index: 1;
+  position: absolute;
+  padding: 10px;
+}
+.navigation .tooltip .tooltiptext3{
+  visibility: hidden;
+  color: gray;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: white;
+  width: 280px;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0 2px gray;
+  top: 200%;
+  left: -1200%;
+  z-index: 1;
+  position: absolute;
+  padding: 10px;
+}
+.navigation .tooltip .tooltiptext2 a button{
+  background-color: black;
+  width: 250px;
+  font-size: 16px;
+  margin: 14px 0px 10px 0px;
+  color: white;
+  padding: 10px 15px;
+}
+.navigation .search-box img{
+   position: absolute;
+   top: 27%;
+   left: 3%;
+   opacity: 0.5;
+}
+.navigation .search-box input{
+    border-radius: 40px;
+    background-color: rgb(247,249,250);
+    position: relative;
+    width: 540px;
+    padding: 8px 0px 10px 50px;
+    border: 1px solid black;
+}
+.navigation .search-box{
+    position: relative;
+}
+.navigation div .button-1{
+  padding: 8px 17px;
+  color: white;
+  background-color:  rgb(56, 55, 55);
+}
+.navigation div .button-2{
+  background-color: white;
+  color: black;
+  padding: 8px 15px;
+  border: 0.5px solid black;
+}
+.navigation div .globe-button{
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 9px 10px 4px 10px;
+  border: 0.5px solid black;
+}
+
+/* second section */
+.udemy-landing-image{
+    background-image: url(./images/dfd08898-7698-411d-9b27-510fbde547c0.jpg);
+    height: 65vh;
+    position: relative;
+    max-width: 99%;
+    margin: 0px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.cyber-sales-card{
+  position: relative;
+  top: 20%;
+  left: 5%;
+  padding: 20px 15px 20px 25px;
+  background-color: white;
+  width: 450px;
+}
+.cyber-sales-card h1{
+  margin-bottom: 4px;
+}
+.text-size-20px{
+  font-size: 22px;
+  line-height: 26px;
+}
+/* third section - courses */
+.courses-section{
+  list-style: none;
+  padding: 30px;
+}
+.courses-section .margin{
+  margin: 18px 0px 15px 0px;
+}
+.courses-section .course-categories{
+  display: flex;
+  width: 60%;
+  margin: 10px 0px 15px 0px;
+  justify-content: space-between;
+  color: rgb(104, 103, 103);
+}
+.courses-section .course-description{
+  border: 1px solid rgb(221, 220, 220);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+.courses-section .course-cards-div{
+  display: flex;
+  justify-content: space-between;
+}
+.courses-section .course-cards-div .course-card{
+  text-decoration: none;
+  color: black;
+  line-height: 22px;
+}
+.courses-section .course-cards-div .course-card a{
+  text-decoration: none;
+  color: black;
+}
+.courses-section .course-cards-div .course-card div .star{
+  width: 60px;
+  height: 14px;
+}
+.courses-section .course-description .button-2{
+  background-color: white;
+  color: black;
+  padding: 8px 15px;
+  border: 0.5px solid black;
+  margin: 10px 0px 20px 0px;
+  font-size: 14px;
+}
+.bestseller {
+  margin: 10px 0px;
+  font-size: 11px;
+  padding: 3px 10px;
+  color: rgb(112,60,10);
+  background-color: rgb(236,235,152);
+  display: inline-block;
+}
+
+/* forth section */
+.gray-section{
+  background-color: rgb(247,249,250);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.gray-section .perks{
+  display: flex;
+}
+.gray-section .perks div{
+  background-color: rgb(209,215,220);
+  padding: 12px 10px 5px 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.gray-section .perks .div img{
+  align-self: center;
+}
+
+
+/*students-view-section*/
+.students-view-section{
+  padding: 70px 35px;
+}
+.students-view-section h2{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.students-view-section .course-cards-div{
+  display: flex;
+  justify-content: space-between;
+}
+.students-view-section .course-cards-div .course-card{
+  text-decoration: none;
+  color: black;
+  line-height: 23px;
+}
+.students-view-section .course-cards-div .course-card a{
+  text-decoration: none;
+  color: black;
+}
+.students-view-section .course-cards-div .course-card div .star{
+  width: 60px;
+  height: 14px;
+}
+.students-view-section .course-description .button-2{
+  background-color: white;
+  color: black;
+  padding: 8px 15px;
+  border: 0.5px solid black;
+  margin: 10px 0px 20px 0px;
+  font-size: 14px;
+}
+.thumbnail{
+  box-shadow: 0px 0px 2px gray;
+  position: relative;
+}
+.rating-figure{
+  font-size: 13px;
+  color: gray;
+}
+.thumbnail .hue{
+  visibility: hidden;
+  background-color: rgba(41, 41, 41, 0.486);
+  z-index: 1;
+}
+
+
+.topics{
+  background-color: rgb(247,249,250);
+  padding: 60px 30px 50px 30px;
+}
+.topics .topic-breakdown{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.topics .topic-breakdown .topic-container{
+  margin-right: 150px;
+  width: 300px;
+}
+.topics .topic-breakdown .topic-container div{
+  margin: 20px 0px;
+}
+.topics a button{
+  color: black;
+  background-color: rgb(247,249,250);
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px 0px 20px 0px;
+  font-size: 14px;
+}
+
+
+.teams{
+  margin: 60px 0px 100px 0px;
+  padding: 40px 30px 20px 30px;
+  text-align: center;
+}
+.teams h2{
+  margin-bottom: 12px;
+}
+.team-logos{
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+
+.udemy-business{
+  display: flex;
+  width: 65%;
+  padding-bottom: 50px;
+  margin: 20px auto;
+}
+.udemy-business .business-writeup{
+  flex-basis: 100%;
+  margin-right: 40px;
+}
+.udemy-business .business-image{
+  flex-basis: 100%;
+  
+}
+.udemy-business .business-image img{
+  width: 400px;
+  height: 400px;
+}
+.udemy-business .business-writeup h2{
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.udemy-business .business-writeup div img{
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+}
+.buttons{
+  margin-top: 20px;
+}
+.buttons .button-1{
+  padding: 10px;
+  color: white;
+  background-color:  rgb(56, 55, 55);
+}
+.buttons .button-2{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 0.5px solid black;
+  margin-left: 4px;
+}
+.udemy-business .business-writeup div .business-benefits li{
+  font-size: 19px;
+  max-width: 92%;
+  padding-bottom: 3px;
+}
+
+
+.instructor{
+  margin: 0px auto 60px auto;
+  width: 75%;
+  display: flex;
+}
+.instructor .instructor-image{
+  flex-basis: 100%;
+}
+.instructor .instructor-writeup{
+  flex-basis: 90%;
+  margin: auto;
+}
+.instructor .instructor-writeup h2{
+  font-size: 35px;
+}
+.instructor .instructor-writeup p{
+  font-size: 18.5px;
+  margin-top: 10px;
+}
+.instructor .instructor-writeup button{
+  margin-top: 14px;
+  background-color: rgb(56, 55, 55);
+  color: white;
+  padding: 10px;
+  border: 1px solid  rgb(56, 55, 55);
+}
+.instructor .instructor-image img{
+  width: 410px;
+  height: 400px;
+  margin-left: 30px;
+}
+
+
+footer{
+  background-color: rgb(28,29,31);
+  color: white;
+  padding: 30px 20px 30px 20px;
+}
+.top-footer-section{
+  display: flex;
+}
+.top-footer-section ul{
+  margin-right: 90px;
+  list-style: none;
+}
+.top-footer-section ul li{
+  padding: 5px 0px;
+}
+.top-footer-section ul li a{
+  text-decoration: none;
+  color: white;
+}
+.top-footer-section .language{
+  margin-left:340px;
+}
+.top-footer-section .language button{
+  padding: 7px 40px 5px 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(28,29,31);
+}
+.top-footer-section .language img{
+  color: white;
+}
+.botton-section-footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 52px 0px 40px;
+}
+.botton-section-footer .trademark{
+  padding-top: 39px;
+  font-size: 12px;
+}
+
+
+
+/* hovers */
+.navigation .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.navigation .tooltip:hover .tooltiptext2 {
+  visibility: visible;
+  color: black;
+}
+.navigation .tooltip:hover .tooltiptext3 {
+  visibility: visible;
+}
+.courses-section .course-categories li:hover{
+  color: black;
+}
+.instructor .instructor-writeup button:hover{
+  background-color: black;
+}
+.purple-shade:hover{
+  color: rgb(164,53,240);
+}
+.buttons .button-1:hover,
+.navigation div .button-1:hover{
+  background-color: black;
+}
+.buttons .button-2:hover, 
+.topics a button:hover,
+.navigation div .button-2:hover,
+.navigation div .globe-button:hover,
+.courses-section .course-description .button-2:hover{
+  background-color: rgb(240, 236, 236);
+}
+.top-footer-section ul li a:hover{
+  text-decoration: underline;
+}
+.top-footer-section .language button:hover{
+  background-color: rgb(56, 55, 55);
+}
+.thumbnail:hover .hue{
+  visibility: visible;
+}
